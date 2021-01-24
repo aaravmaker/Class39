@@ -34,6 +34,11 @@ class Game {
     car3 = createSprite(500,200);
     car4 = createSprite(700,200);
     cars = [car1, car2, car3, car4];
+  
+    car1.addImage("car1",c1)
+    car2.addImage("car2",c2)
+    car3.addImage("car3",c3)
+    car4.addImage("car4",c4)
   }
 
   play(){
@@ -43,7 +48,7 @@ class Game {
     
     if(allPlayers !== undefined){
       //var display_position = 100;
-      
+      image(track,0,-displayHeight*4,displayWidth,displayHeight*5)
       //index of the array
       var index = 0;
 
